@@ -1,5 +1,5 @@
 import { HealthController } from '../controllers';
-import { Router } from "../common";
+import {Router} from "common-clases";
 
 export class HealthRouter extends Router {
 

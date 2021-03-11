@@ -1,15 +1,9 @@
-import * as express from "express";
 import { HealthRouter } from "../routers";
-
-interface IROUTER {
-    path: string;
-    middleware: any[];
-    handler: express.Router;
-}
+import {IrouterConfig} from "common-clases";
 
 const HEALTH = new HealthRouter();
 
-export const ROUTER: IROUTER[] = [{
+export const ROUTER: IrouterConfig[] = [{
     handler: HEALTH.router,
     middleware: [],
     path: "/healthz"

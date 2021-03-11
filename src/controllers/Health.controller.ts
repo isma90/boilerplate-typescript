@@ -1,6 +1,6 @@
-import { Controller } from "../common";
 import { HealthService } from "../services";
 import { Request, Response } from "express";
+import {Controller} from "common-clases";
 
 export class HealthController extends Controller {
 
