@@ -1,9 +1,12 @@
 {
-  "watch": ["**/*.ts"],
-  "ext": "ts",
-  "ignore": ["./test/*.ts"],
-  "exec": "node -r ts-node/register -r dotenv/config index.ts",
-  "env": {
-    "NODE_ENV": "development"
-  }
+  "execMap": {
+    "ts": "ts-node"
+  },
+  "exec": "node -r ts-node/register -r dotenv/config server/index.ts",
+  "ignore": ["test/**/*.ts", "test/**/*.spec.ts", ".git", "node_modules"],
+  "watch": [
+    "server",
+    ".env"
+  ],
+  "ext": "ts,js,json,yaml,yml"
 }

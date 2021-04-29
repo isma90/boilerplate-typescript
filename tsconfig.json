@@ -1,21 +1,30 @@
 {
+  "compileOnSave": false,
   "compilerOptions": {
+    "target":"ES2018",
     "module": "commonjs",
-    "target": "es6",
+    "lib": ["es2020"],
+    "declaration": true,
+    "strict": true,
     "noImplicitAny": true,
-    "sourceMap": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "strictNullChecks": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
-    "baseUrl": ".",
-    "paths": {
-      "*": [
-        "node_modules/*",
-        "app/types/*",
-      ]
-    }
+    "noFallthroughCasesInSwitch": false,
+    "sourceMap": true,
+    "strictPropertyInitialization":false,
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": false,
+    "outDir": "dist",
+    "typeRoots": ["./node_modules/@types"]
   },
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }
